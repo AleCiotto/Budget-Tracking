@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mercurio.alessandro.budgettracking">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mercurio.alessandro.budgettracking.ItemActivity"
+            android:label="@string/title_activity_item_details"></activity>
+        <activity
+            android:name="mercurio.alessandro.budgettracking.NewItemActivity"
+            android:label="@string/title_activity_new_item_details"
+            android:parentActivityName="mercurio.alessandro.budgettracking.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mercurio.alessandro.budgettracking.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AdvancedView"
+            android:label="@string/title_activity_item_category_view"
+            android:parentActivityName="mercurio.alessandro.budgettracking.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mercurio.alessandro.budgettracking.MainActivity" />
+        </activity>
+        <activity
+            android:name="mercurio.alessandro.budgettracking.UserSettings"
+            android:label="@string/action_settings"
+            android:parentActivityName="mercurio.alessandro.budgettracking.MainActivity">
+            <meta-data
+                android:name="android.support.USER_SETTINGS"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Statistics"
+            android:label="@string/vedi_statistiche"
+            android:parentActivityName="mercurio.alessandro.budgettracking.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mercurio.alessandro.budgettracking.MainActivity" />
+        </activity>
+        <activity
+            android:name="mercurio.alessandro.budgettracking.MakeReport"
+            android:label="@string/make_report"
+            android:parentActivityName="mercurio.alessandro.budgettracking.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mercurio.alessandro.budgettracking.MainActivity" />
+        </activity>
+        <activity
+            android:name="mercurio.alessandro.budgettracking.ReportManager"
+            android:label="@string/reports"
+            android:parentActivityName="mercurio.alessandro.budgettracking.MakeReport">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mercurio.alessandro.budgettracking.MakeReport" />
+        </activity>
+        <activity
+            android:name="mercurio.alessandro.budgettracking.Info"
+            android:label="@string/info"
+            android:parentActivityName="mercurio.alessandro.budgettracking.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mercurio.alessandro.budgettracking.MainActivity" />
+        </activity>
+    </application>
+
+
+</manifest>
+

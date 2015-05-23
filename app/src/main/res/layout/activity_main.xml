@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total_label"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/budget_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Totale spesa:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/budget_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Budget rimasto:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/budget"
+        android:layout_toRightOf="@+id/total_label"
+        android:gravity="end"
+        android:text="€"
+        android:textAlignment="textEnd"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF0000"
+        android:layout_toStartOf="@+id/fab_image_button"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_label"
+        android:layout_toRightOf="@+id/budget_label"
+        android:gravity="end"
+        android:text="€"
+        android:textAlignment="textEnd"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00B200"
+        android:layout_toLeftOf="@+id/fab_image_button"
+        android:layout_toStartOf="@+id/fab_image_button"
+        android:layout_marginRight="16dp" />
+
+    <ImageButton
+        android:id="@+id/fab_image_button"
+        android:layout_width="@dimen/fab_button_diameter"
+        android:layout_height="@dimen/fab_button_diameter"
+        android:background="@drawable/fab_shape"
+        android:tint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listview"
+        android:layout_alignEnd="@+id/listview"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/fab_ic_add" />
+
+</RelativeLayout>

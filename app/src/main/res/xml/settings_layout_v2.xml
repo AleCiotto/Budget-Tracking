@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <PreferenceCategory android:title="@string/preferences_budget">
+
+        <CheckBoxPreference
+            android:key="checkbox_budget_preference"
+            android:summary="@string/summary_checkbox_budget_preference"
+            android:title="@string/title_checkbox_budget_preference" />
+
+        <EditTextPreference
+            android:dependency="checkbox_budget_preference"
+            android:dialogTitle="@string/dialog_title_edittext_budget_preference"
+            android:inputType="number"
+            android:key="edittext_budget_preference"
+            android:summary="@string/summary_edittext_budget_preference"
+            android:title="@string/title_edittext_budget_preference" />
+
+        <EditTextPreference
+            android:dependency="checkbox_budget_preference"
+            android:dialogTitle="@string/dialog_title_day_budget"
+            android:inputType="number"
+            android:key="day_budget_preference"
+            android:summary="@string/summary_day_budget_preference"
+            android:title="@string/title_day_budget_preference" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

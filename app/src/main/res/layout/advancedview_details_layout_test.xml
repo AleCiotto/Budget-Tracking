@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/varie_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="30dp"
+            android:src="@drawable/orange_v" />
+
+        <TextView
+            android:id="@+id/varie_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/varie_img"
+            android:layout_toRightOf="@+id/varie_img"
+            android:text="Varie"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/varie_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/varie_label"
+            android:layout_toEndOf="@+id/varie_img"
+            android:layout_toRightOf="@+id/varie_img"
+            android:text="€"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff8b566" />
+
+        <ImageView
+            android:id="@+id/casa_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/varie_label"
+            android:paddingBottom="30dp"
+            android:src="@drawable/green_c" />
+
+        <TextView
+            android:id="@+id/casa_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/casa_img"
+            android:layout_toLeftOf="@+id/casa_img"
+            android:layout_toStartOf="@+id/casa_img"
+            android:text="Casa"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/casa_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/varie_total"
+            android:layout_toLeftOf="@+id/casa_img"
+            android:layout_toStartOf="@+id/casa_img"
+            android:text="€"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff67be74" />
+
+        <ImageView
+            android:id="@+id/bollette_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/varie_img"
+            android:paddingBottom="30dp"
+            android:src="@drawable/violet_b" />
+
+        <ImageView
+            android:id="@+id/ceb_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auto_img"
+            android:layout_toLeftOf="@+id/auto_total"
+            android:layout_toStartOf="@+id/auto_total"
+            android:paddingBottom="30dp"
+            android:src="@drawable/light_red_c" />
+
+        <ImageView
+            android:id="@+id/auto_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bollette_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/bollette_img"
+            android:layout_below="@+id/bollette_img"
+            android:layout_toStartOf="@+id/casa_label"
+            android:paddingBottom="30dp"
+            android:src="@drawable/green_a" />
+
+        <ImageView
+            android:id="@+id/sp_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ceb_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/ceb_img"
+            android:layout_below="@+id/ceb_img"
+            android:layout_toEndOf="@+id/auto_img"
+            android:layout_toStartOf="@+id/hobby_label"
+            android:paddingBottom="30dp"
+            android:src="@drawable/pink_s" />
+
+        <ImageView
+            android:id="@+id/abbigl_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/casa_img"
+            android:layout_toStartOf="@+id/casa_total"
+            android:paddingBottom="30dp"
+            android:src="@drawable/blue_a" />
+
+        <ImageView
+            android:id="@+id/divert_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/abbigl_img"
+            android:paddingBottom="30dp"
+            android:src="@drawable/light_blue_d" />
+
+        <ImageView
+            android:id="@+id/hobby_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divert_img"
+            android:paddingBottom="30dp"
+            android:src="@drawable/yellow_h" />
+
+        <TextView
+            android:id="@+id/bollette_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/varie_img"
+            android:layout_toEndOf="@+id/bollette_img"
+            android:layout_toRightOf="@+id/bollette_img"
+            android:text="Bollette"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/ceb_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ceb_img"
+            android:layout_toEndOf="@+id/ceb_img"
+            android:layout_toRightOf="@+id/ceb_img"
+            android:text="Cibi e Bevande"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/auto_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/auto_img"
+            android:layout_toEndOf="@+id/auto_img"
+            android:layout_toRightOf="@+id/auto_img"
+            android:text="Auto"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/sp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sp_img"
+            android:layout_toEndOf="@+id/sp_img"
+            android:layout_toRightOf="@+id/sp_img"
+            android:text="Spese Periodiche"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/abbigl_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/casa_img"
+            android:layout_toLeftOf="@+id/abbigl_img"
+            android:layout_toStartOf="@+id/abbigl_img"
+            android:text="Abbigliamento"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/divert_labl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/divert_img"
+            android:layout_toLeftOf="@+id/divert_img"
+            android:layout_toStartOf="@+id/divert_img"
+            android:text="Divertimento"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/hobby_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/hobby_img"
+            android:layout_toLeftOf="@+id/hobby_img"
+            android:layout_toStartOf="@+id/hobby_img"
+            android:text="Hobby"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/bollette_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bollette_label"
+            android:layout_toEndOf="@+id/bollette_img"
+            android:layout_toRightOf="@+id/bollette_img"
+            android:text="€"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffac63a6" />
+
+        <TextView
+            android:id="@+id/ceb_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ceb_label"
+            android:layout_toEndOf="@+id/ceb_img"
+            android:layout_toRightOf="@+id/ceb_img"
+            android:text="€"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff48459" />
+
+        <TextView
+            android:id="@+id/auto_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auto_label"
+            android:layout_toEndOf="@+id/auto_img"
+            android:layout_toRightOf="@+id/auto_img"
+            android:text="€"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff67be74" />
+
+        <TextView
+            android:id="@+id/sp_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_label"
+            android:layout_toEndOf="@+id/sp_img"
+            android:layout_toRightOf="@+id/sp_img"
+            android:text="€"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff06364" />
+
+        <TextView
+            android:id="@+id/divert_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divert_labl"
+            android:layout_toEndOf="@+id/sp_label"
+            android:layout_toLeftOf="@+id/divert_img"
+            android:layout_toStartOf="@+id/divert_img"
+            android:gravity="end"
+            android:text="€"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff73b0c7" />
+
+        <TextView
+            android:id="@+id/hobby_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/divert_labl"
+            android:layout_alignRight="@+id/divert_labl"
+            android:layout_below="@+id/hobby_label"
+            android:layout_toEndOf="@+id/sp_label"
+            android:layout_toStartOf="@+id/hobby_img"
+            android:gravity="end"
+            android:text="€"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffe3c52e" />
+
+        <TextView
+            android:id="@+id/abbigl_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abbigl_label"
+            android:layout_toEndOf="@+id/sp_label"
+            android:layout_toLeftOf="@+id/abbigl_img"
+            android:layout_toRightOf="@+id/sp_label"
+            android:layout_toStartOf="@+id/abbigl_img"
+            android:gravity="end"
+            android:text="€"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff2092cc" />
+
+    </RelativeLayout>
+</ScrollView>

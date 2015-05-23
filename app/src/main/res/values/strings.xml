@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Budget Tracking</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Preferenze</string>
+    <string name="ordina_per_categoria">Ordina per categoria</string>
+    <string name="ordina_per_prezzo">Ordina per prezzo</string>
+    <string name="ordina_per_data">Ordina per data</string>
+    <string name="action_modify">Modifica</string>
+    <string name="title_activity_item_details">Dettagli Spesa</string>
+    <string name="action_add">Aggiungi</string>
+    <string name="action_done">Fatto</string>
+    <string name="title_activity_new_item_details">Aggiungi Spesa</string>
+    <string name="delete_all_and_restart">Cancella tutto e riavvia db</string>
+    <string name="delete_all">Cancella tutto</string>
+    <string name="advanced_view">Passa a modalità avanzata</string>
+    <string name="action_delete">Elimina</string>
+    <string name="title_activity_item_category_view">Advanced view</string>
+    <string name="preferences_budget">Budget</string>
+    <string name="title_checkbox_budget_preference">Budget</string>
+    <string name="summary_checkbox_budget_preference">Abilita controllo su budget mensile</string>
+    <string name="summary_edittext_budget_preference">Imposta Budget</string>
+    <string name="title_edittext_budget_preference">Inserisci budget mensile</string>
+    <string name="dialog_title_edittext_budget_preference">Imposta budget</string>
+    <string name="action_cancel">Indietro</string>
+    <string name="vedi_statistiche">Vedi statistiche</string>
+    <string name="previous">Indietro</string>
+    <string name="next">Avanti</string>
+    <string name="action_search_by_date">Filtra per data</string>
+    <string name="action_search_by_name">Filtra per nome</string>
+    <string name="action_search_by_category">Filtra per categoria</string>
+    <string name="dialog_filter_by_name_message">Nome:</string>
+    <string name="dialog_filter_by_name_title">Inserisci nome</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Indietro</string>
+    <string name="name">Inserisci nome</string>
+    <string name="dialog_filter_by_date_title">Seleziona una data</string>
+    <string name="dialog_filter_by_category_title">Seleziona una o più categorie</string>
+    <string name="show_all">Mostra tutto</string>
+    <string name="dialog_title">Spese imminenti</string>
+    <string name="item_alert_note">N.B. Attivando il promemoria verrà visualizzato un popup 1-2 giorni prima della data indicata all\' avvio dell\' applicazione. Il costo verrà detratto solo al raggiungimento di tale data.</string>
+    <string name="title_day_budget_preference">Giorno del mese</string>
+    <string name="summary_day_budget_preference">Giorno del mese in cui viene resettato il budget</string>
+    <string name="dialog_title_day_budget">Seleziona giorno del mese</string>
+    <string name="dialog_edit_price">Modifica prezzo</string>
+    <string name="preferences_other">Altro</string>
+    <string name="dialog_delete_all_title">Cancella tutto</string>
+    <string name="dialog_delete_all_message">Sei sicuro di voler eliminare tutte le spese?</string>
+    <string name="make_report">Crea rapporto PDF</string>
+    <string name="select_dates">Seleziona inizio e fine</string>
+    <string name="select_categories">Seleziona categorie</string>
+    <string name="order_by">Ordina per:</string>
+    <string name="info">Info applicazione</string>
+    <string name="legenda">Legenda</string>
+    <string name="reports">Rapporti creati</string>
+
+</resources>

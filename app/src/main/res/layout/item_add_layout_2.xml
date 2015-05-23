@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dip">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/addItem_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_column="0"
+                android:layout_span="1" />
+
+            <EditText
+                android:id="@+id/addItem_name_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+                style="@style/AppTheme"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:layout_span="5"
+                android:clickable="false" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/addItem_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/addItem_date_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:inputType="date"
+                android:onClick="onDataClick"
+                style="@style/AppTheme"
+                android:layout_span="5"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/addItem_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Prezzo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/addItem_price_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                style="@style/AppTheme"
+                android:layout_span="5"
+                android:layout_weight="1"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/addItem_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Luogo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/addItem_location_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress|textCapSentences"
+                android:singleLine="true"
+                style="@style/AppTheme"
+                android:layout_column="1"
+                android:layout_span="5"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/addItem_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Descrizione"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/addItem_description_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapSentences"
+                style="@style/AppTheme"
+                android:layout_weight="1"
+                android:layout_span="5"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/addItem_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/addItem_category_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:spinnerMode="dialog"
+                android:theme="@style/Base.Widget.AppCompat.Spinner"
+                style="@style/AppTheme"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <CheckBox
+                android:id="@+id/addItem_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Promemoria"
+                android:buttonTint="@color/primary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/addItem_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="createDialog"
+                android:text="Seleziona Immagine (optional)"
+                android:padding="5dp"
+                style="@style/AppTheme"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+                <!--android:textColor="@color/primary" />-->
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/addItem_imgTest"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Test"
+                android:layout_alignTop="@+id/addItem_img"
+                android:layout_toEndOf="@+id/addItem_img" />
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

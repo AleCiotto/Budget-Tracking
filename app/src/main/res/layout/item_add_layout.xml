@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dip">
+
+        <TextView
+            android:id="@+id/addItem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Nome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addItem_name_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_name"
+            android:singleLine="true"
+            android:inputType="textCapSentences"
+            style="@style/AppTheme" />
+
+        <TextView
+            android:id="@+id/addItem_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_name_edit"
+            android:text="Data"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addItem_date_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_date"
+            android:clickable="true"
+            android:focusable="false"
+            android:inputType="date"
+            android:onClick="onDataClick"
+            style="@style/AppTheme" />
+
+        <TextView
+            android:id="@+id/addItem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_date_edit"
+            android:text="Prezzo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addItem_price_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_price"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            style="@style/AppTheme" />
+
+        <TextView
+            android:id="@+id/addItem_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_price_edit"
+            android:text="Luogo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addItem_location_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_location"
+            android:ems="10"
+            android:inputType="textPostalAddress|textCapSentences"
+            android:singleLine="true"
+            style="@style/AppTheme" />
+
+        <TextView
+            android:id="@+id/addItem_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_location_edit"
+            android:text="Categoria"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/addItem_category_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_category"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:spinnerMode="dialog"
+            android:theme="@style/Base.Widget.AppCompat.Spinner"
+            style="@style/AppTheme" />
+
+        <TextView
+            android:id="@+id/addItem_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_category_spinner"
+            android:text="Descrizione"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addItem_description_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addItem_description"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            style="@style/AppTheme" />
+
+        <CheckBox
+            android:id="@+id/addItem_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/addItem_description_edit"
+            android:layout_alignRight="@+id/addItem_description_edit"
+            android:layout_below="@+id/addItem_description_edit"
+            android:checked="false"
+            android:text="Promemoria"
+            android:buttonTint="@color/primary" />
+
+        <Button
+            android:id="@+id/addItem_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/addItem_imgTest"
+            android:layout_marginTop="18dp"
+            android:onClick="createDialog"
+            android:text="Seleziona Immagine (optional)"
+            android:padding="5dp"
+            style="@style/AppTheme" />
+            <!--android:textColor="@color/primary" />-->
+
+        <ImageView
+            android:id="@+id/addItem_imgTest"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Test"
+            android:layout_below="@+id/addItem_alert"
+            android:layout_alignRight="@+id/addItem_alert"
+            android:layout_alignEnd="@+id/addItem_alert" />
+
+    </RelativeLayout>
+</ScrollView>

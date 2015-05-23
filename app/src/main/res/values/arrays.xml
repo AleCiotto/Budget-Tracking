@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="graph_views">
+        <item>Giorno</item>
+        <item>Settimana</item>
+        <item>Mese</item>
+    </string-array>
+    <string-array name="camera_or_gallery">
+        <item>Fotocamera</item>
+        <item>Galleria</item>
+    </string-array>
+    <integer-array name="categories">
+        <!-- 0: Varie
+             1: Casa
+             2: Bollette
+             3: Abbigliamento
+             4: Cibi e Bevande
+             5: Divertimento
+             6: Auto
+             7: Hobby
+             8: Spese Periodiche
+             9:
+             -->
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="categoriesString">
+        <item>Varie</item>
+        <item>Casa</item>
+        <item>Bollette</item>
+        <item>Abbigliamento</item>
+        <item>Cibi e Bevande</item>
+        <item>Divertimento</item>
+        <item>Auto</item>
+        <item>Hobby</item>
+        <item>Spese Periodiche</item>
+    </string-array>
+    <string-array name="orderBy_spinner">
+        <item>Data</item>
+        <item>Prezzo</item>
+        <item>Alfabetico</item>
+        <item>Categoria</item>
+    </string-array>
+</resources>
